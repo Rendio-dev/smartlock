@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447FB437C92EF936EF79A152 /* Pods_smartlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACD043FD39B9E176033A395 /* Pods_smartlock.framework */; };
+		D21180882A31CDD100DE6071 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D21180872A31CDD100DE6071 /* GoogleService-Info.plist */; };
 		D2FD0B982A3090E3000CC427 /* smartlockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD0B972A3090E3000CC427 /* smartlockApp.swift */; };
 		D2FD0B9A2A3090E3000CC427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD0B992A3090E3000CC427 /* ContentView.swift */; };
 		D2FD0B9C2A3090EE000CC427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD0B9B2A3090EE000CC427 /* Assets.xcassets */; };
 		D2FD0BA02A3090EE000CC427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD0B9F2A3090EE000CC427 /* Preview Assets.xcassets */; };
+		D2FD17452A318F97000CC427 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD17442A318F97000CC427 /* FirebaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B51F6E1A0BAADA15BF145A /* Pods-smartlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartlock.release.xcconfig"; path = "Target Support Files/Pods-smartlock/Pods-smartlock.release.xcconfig"; sourceTree = "<group>"; };
+		1ACD043FD39B9E176033A395 /* Pods_smartlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		740DF5C801AB288DB295ADF2 /* Pods-smartlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartlock.debug.xcconfig"; path = "Target Support Files/Pods-smartlock/Pods-smartlock.debug.xcconfig"; sourceTree = "<group>"; };
+		D21180872A31CDD100DE6071 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2FD0B942A3090E3000CC427 /* smartlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD0B972A3090E3000CC427 /* smartlockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartlockApp.swift; sourceTree = "<group>"; };
 		D2FD0B992A3090E3000CC427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2FD0B9B2A3090EE000CC427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2FD0B9D2A3090EE000CC427 /* smartlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smartlock.entitlements; sourceTree = "<group>"; };
 		D2FD0B9F2A3090EE000CC427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2FD17442A318F97000CC427 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447FB437C92EF936EF79A152 /* Pods_smartlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7011F9FF68ECC9237D749265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740DF5C801AB288DB295ADF2 /* Pods-smartlock.debug.xcconfig */,
+				14B51F6E1A0BAADA15BF145A /* Pods-smartlock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3A3AC5862C3DFA3B4D57565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ACD043FD39B9E176033A395 /* Pods_smartlock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2FD0B8B2A3090E3000CC427 = {
 			isa = PBXGroup;
 			children = (
 				D2FD0B962A3090E3000CC427 /* smartlock */,
 				D2FD0B952A3090E3000CC427 /* Products */,
+				7011F9FF68ECC9237D749265 /* Pods */,
+				C3A3AC5862C3DFA3B4D57565 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +84,9 @@
 				D2FD0B992A3090E3000CC427 /* ContentView.swift */,
 				D2FD0B9B2A3090EE000CC427 /* Assets.xcassets */,
 				D2FD0B9D2A3090EE000CC427 /* smartlock.entitlements */,
+				D21180872A31CDD100DE6071 /* GoogleService-Info.plist */,
 				D2FD0B9E2A3090EE000CC427 /* Preview Content */,
+				D2FD17442A318F97000CC427 /* FirebaseHelper.swift */,
 			);
 			path = smartlock;
 			sourceTree = "<group>";
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2FD0BA32A3090EE000CC427 /* Build configuration list for PBXNativeTarget "smartlock" */;
 			buildPhases = (
+				D29250B90F7E76E0EEA004BB /* [CP] Check Pods Manifest.lock */,
 				D2FD0B902A3090E3000CC427 /* Sources */,
 				D2FD0B912A3090E3000CC427 /* Frameworks */,
 				D2FD0B922A3090E3000CC427 /* Resources */,
+				F35BA98C79FF4E99DBF8166B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,10 +161,53 @@
 			files = (
 				D2FD0BA02A3090EE000CC427 /* Preview Assets.xcassets in Resources */,
 				D2FD0B9C2A3090EE000CC427 /* Assets.xcassets in Resources */,
+				D21180882A31CDD100DE6071 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D29250B90F7E76E0EEA004BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35BA98C79FF4E99DBF8166B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartlock/Pods-smartlock-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartlock/Pods-smartlock-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartlock/Pods-smartlock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2FD0B902A3090E3000CC427 /* Sources */ = {
@@ -140,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FD0B9A2A3090E3000CC427 /* ContentView.swift in Sources */,
+				D2FD17452A318F97000CC427 /* FirebaseHelper.swift in Sources */,
 				D2FD0B982A3090E3000CC427 /* smartlockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -258,6 +336,7 @@
 		};
 		D2FD0BA42A3090EE000CC427 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740DF5C801AB288DB295ADF2 /* Pods-smartlock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -269,6 +348,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Lock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,7 +360,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -287,15 +368,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.rendio.smartlock.smartlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D2FD0BA52A3090EE000CC427 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B51F6E1A0BAADA15BF145A /* Pods-smartlock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +391,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Lock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +403,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -325,10 +411,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.rendio.smartlock.smartlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
